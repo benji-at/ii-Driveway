@@ -6,7 +6,7 @@
             "id": "driveway",
             "name": "Driveway",
             "description": "A simple illogical-impluse theme in grey/red colors, minimal and beautiful",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "configVersion": 29,
             "path": "presets/driveway",
             "wallpaper": "presets/driveway/wallpaper.jpg",
