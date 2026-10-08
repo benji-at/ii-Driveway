@@ -3,13 +3,18 @@
     "name": "Driveway",
     "author": "benji-at",
     "description": "A simple illogical-impluse theme in grey/red colors, minimal and beautiful",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "configVersion": 29,
     "config": "config.json",
     "screenshots": [
         "screenshots/1-c9b38e8f.png"
     ],
     "changelog": [
+        {
+            "version": "1.0.1",
+            "date": "2026-10-08",
+            "notes": "patch"
+        },
         {
             "version": "1.0.0",
             "date": "2026-10-08",

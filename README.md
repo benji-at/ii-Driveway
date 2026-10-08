@@ -4,7 +4,7 @@ Community presets collection for [Illogical Impulse](https://github.com/vaxerski
 
 ## Available Presets
 
-- **Driveway** (`driveway`, v1.0.0) — A simple illogical-impluse theme in grey/red colors, minimal and beautiful
+- **Driveway** (`driveway`, v1.0.1) — A simple illogical-impluse theme in grey/red colors, minimal and beautiful
 
 ## How to Install
 
