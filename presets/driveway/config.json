@@ -72,12 +72,11 @@
         "gapsIn": 10,
         "gapsOut": 28,
         "globalRounding": "large",
-        "iconTheme": "",
         "iconTintPercentage": 0.6,
         "icons": {
             "enableShapeMask": false,
-            "enableThemed": false,
-            "shapeMask": "Circle"
+            "shapeMask": "Circle",
+            "enableThemed": false
         },
         "ignoreAlpha": 0.35000000000000003,
         "openrgb": {
@@ -131,7 +130,8 @@
                 "termFgBoost": 0.35
             }
         },
-        "wrappedFrameThickness": 6
+        "wrappedFrameThickness": 6,
+        "iconTheme": ""
     },
     "apps": {
         "bluetooth": "kcmshell6 kcm_bluetooth",
@@ -277,7 +277,7 @@
         "wallpaperAnimation": "random",
         "wallpaperEngineAssetsPath": "",
         "wallpaperEngineId": "",
-        "wallpaperPath": "$HOME/Pictures/Wallpapers/aafcf6cf516a7ed7d12265dabd58bfb1.jpg",
+        "wallpaperPath": "$HOME/.config/illogical-impulse/presets/Driveway.jpg",
         "widgets": {
             "ai_chat": {
                 "enable": false,
@@ -953,8 +953,6 @@
                 "x": 400,
                 "y": 100
             },
-            "showOnlyOnSingleMonitor": false,
-            "targetMonitor": "",
             "tintOpacity": 0.34,
             "tintOpacityEnabled": false,
             "triple_ring_clock": {
@@ -1086,7 +1084,9 @@
                 "placementStrategy": "free",
                 "x": 200,
                 "y": 200
-            }
+            },
+            "showOnlyOnSingleMonitor": false,
+            "targetMonitor": ""
         },
         "windowZoomLiveCapture": true,
         "windowZoomOnOverview": true,
@@ -1276,10 +1276,10 @@
             "integratedPopups": true,
             "integratedSessionMenu": true,
             "integratedWallpaperBrowser": true,
-            "onlyShowOnSingleMonitor": false,
             "shape": "notch",
-            "singleMonitorName": "",
-            "wallpaperBrowserStyle": "row"
+            "wallpaperBrowserStyle": "row",
+            "onlyShowOnSingleMonitor": false,
+            "singleMonitorName": ""
         },
         "indicators": {
             "notifications": {
@@ -1313,6 +1313,11 @@
                     "centered": false,
                     "id": "weather",
                     "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "system_monitor",
+                    "visible": true
                 }
             ],
             "left": [
@@ -1340,14 +1345,14 @@
                     "centered": false,
                     "id": "easyeffects_indicator",
                     "visible": false
-                },
-                {
-                    "centered": false,
-                    "id": "system_monitor",
-                    "visible": false
                 }
             ],
             "right": [
+                {
+                    "centered": false,
+                    "id": "keyboard_layout",
+                    "visible": true
+                },
                 {
                     "centered": false,
                     "id": "system_tray",
@@ -1360,13 +1365,13 @@
                 },
                 {
                     "centered": false,
-                    "id": "battery",
-                    "visible": false
+                    "id": "dashboard_panel_button",
+                    "visible": true
                 },
                 {
                     "centered": false,
-                    "id": "dashboard_panel_button",
-                    "visible": true
+                    "id": "battery",
+                    "visible": false
                 },
                 {
                     "centered": false,
@@ -1393,7 +1398,6 @@
             "popupStyle": "android",
             "useFixedSize": false
         },
-        "onlyShowOnSingleMonitor": false,
         "policies": {
             "colorMode": "primary"
         },
@@ -1444,14 +1448,12 @@
             "showPercentageText": true,
             "swapWarningThreshold": 85
         },
-        "screenList": [],
         "searchWidget": {
             "colorMode": "tonal",
             "showShortcutHint": true,
             "sizeMode": "compact"
         },
         "sidebarClickOpen": true,
-        "singleMonitorName": "",
         "sizes": {
             "height": 40,
             "width": 44
@@ -1519,13 +1521,13 @@
             "clock": "expressive",
             "dashboard": "expressive",
             "date": "default",
-            "keyboard": "expressive",
+            "keyboard": "material",
             "media": "default",
             "notification": "default",
             "policies": "expressive",
             "portWatcher": "expressive",
-            "power": "expressive",
-            "recordIndicator": "expressive",
+            "power": "dot",
+            "recordIndicator": "neural",
             "resources": "expressive",
             "search": "default",
             "sports": "expressive",
@@ -1613,7 +1615,10 @@
                 0,
                 10
             ]
-        }
+        },
+        "onlyShowOnSingleMonitor": false,
+        "singleMonitorName": "",
+        "screenList": []
     },
     "battery": {
         "automaticSuspend": true,
@@ -2270,10 +2275,10 @@
                 "swipeRight": "workspacePrev",
                 "swipeUp": "appDrawer"
             },
-            "targetMonitor": "auto",
             "transform": "auto",
             "velocityThreshold": 650,
-            "visualFeedback": true
+            "visualFeedback": true,
+            "targetMonitor": "auto"
         },
         "touchpadGestures": {
             "bindings": [
@@ -2312,16 +2317,6 @@
             "trackedDistance": 280
         }
     },
-    "language": {
-        "translator": {
-            "defaultSourceLanguage": "auto",
-            "defaultTargetLanguage": "auto",
-            "engine": "auto",
-            "sourceLanguage": "auto",
-            "targetLanguage": "English"
-        },
-        "ui": "auto"
-    },
     "launcher": {
         "pinnedApps": [
             "org.kde.dolphin",
@@ -2352,7 +2347,7 @@
         },
         "night": {
             "automatic": true,
-            "colorTemperature": 1919,
+            "colorTemperature": 1654,
             "from": "19:00",
             "persistManual": "always",
             "to": "06:30"
@@ -2360,9 +2355,9 @@
     },
     "localsend": {
         "autoStart": true,
-        "downloadPath": "$HOME/Downloads/localsend",
         "preferPopupOverNotification": true,
-        "showNotifications": true
+        "showNotifications": true,
+        "downloadPath": "$HOME/Downloads/localsend"
     },
     "lock": {
         "blur": {
@@ -2467,7 +2462,6 @@
         "audioBitrate": 0,
         "audioCodec": "any",
         "defaultFormat": "best",
-        "downloadPath": "$HOME/Downloads",
         "embedMetadata": true,
         "enabled": true,
         "extraArgs": "",
@@ -2482,7 +2476,8 @@
         "useAria2c": false,
         "videoCodec": "any",
         "videoResolution": "best",
-        "writeThumbnail": false
+        "writeThumbnail": false,
+        "downloadPath": "$HOME/Downloads"
     },
     "modes": {
         "enable": true,
@@ -3082,14 +3077,6 @@
             "rotateDegrees": 0
         }
     },
-    "policies": {
-        "ai": 2,
-        "phone": 1,
-        "player": 1,
-        "translator": 0,
-        "wallpapers": 0,
-        "weeb": 0
-    },
     "regionSelector": {
         "annotation": {
             "badgeStartNumber": 1,
@@ -3153,12 +3140,12 @@
         "recordAudio": false,
         "recordMic": false,
         "resolution": "native",
-        "savePath": "$HOME/Videos",
         "service": "obs",
         "showEditPrompt": true,
         "showNotifications": true,
         "useGpu": true,
-        "useToolbar": false
+        "useToolbar": false,
+        "savePath": "$HOME/Videos"
     },
     "screenShader": {
         "extraShaderDirs": [],
@@ -3760,21 +3747,21 @@
         }
     },
     "wallpaperSelector": {
-        "customDefaultPath": "$HOME/Pictures/Wallpapers",
-        "directories": [],
         "sortField": "modified",
         "sortReversed": false,
         "useCustomDefaultPath": false,
-        "useSystemFileDialog": false
+        "useSystemFileDialog": false,
+        "customDefaultPath": "$HOME/Pictures/Wallpapers",
+        "directories": []
     },
     "wallpapers": {
+        "service": "wallhaven",
+        "showAnimeResults": false,
+        "sort": "favourites",
         "paths": {
             "download": "$HOME/Pictures/Wallpapers",
             "nsfw": "$HOME/Pictures/Wallpapers/NSFW"
-        },
-        "service": "wallhaven",
-        "showAnimeResults": false,
-        "sort": "favourites"
+        }
     },
     "windowSwitcher": {
         "currentMonitorOnly": false,
@@ -3789,6 +3776,24 @@
     "windows": {
         "centerTitle": true,
         "showTitlebar": true
+    },
+    "language": {
+        "translator": {
+            "defaultSourceLanguage": "auto",
+            "defaultTargetLanguage": "auto",
+            "engine": "auto",
+            "sourceLanguage": "auto",
+            "targetLanguage": "English"
+        },
+        "ui": "auto"
+    },
+    "policies": {
+        "ai": 2,
+        "phone": 1,
+        "player": 1,
+        "translator": 0,
+        "wallpapers": 0,
+        "weeb": 0
     },
     "workSafety": {
         "enable": {
