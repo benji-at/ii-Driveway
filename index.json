@@ -1,0 +1,18 @@
+{
+    "schema": 1,
+    "author": "benji-at",
+    "presets": [
+        {
+            "id": "driveway",
+            "name": "Driveway",
+            "description": "A simple illogical-impluse theme in grey/red colors, minimal and beautiful",
+            "version": "1.0.0",
+            "configVersion": 29,
+            "path": "presets/driveway",
+            "wallpaper": "presets/driveway/wallpaper.jpg",
+            "screenshots": [
+                "presets/driveway/screenshots/1-c9b38e8f.png"
+            ]
+        }
+    ]
+}
