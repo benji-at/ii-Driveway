@@ -1,27 +1,4 @@
 {
-    "appStats": {
-        "defaultGranularity": "day",
-        "defaultMetric": "fg",
-        "enable": true,
-        "energySource": "auto",
-        "flushIntervalMs": 60000,
-        "gpuFullEvery": 30,
-        "idleTimeoutSec": 300,
-        "keepSelection": false,
-        "lastGranularity": "week",
-        "lastMetric": "fg",
-        "lastView": "apps",
-        "minDurationSec": 0,
-        "overlayEnabled": true,
-        "rememberLastView": true,
-        "retentionDays": 31,
-        "retentionMode": "previousMonth",
-        "sampleIntervalMs": 10000,
-        "showComparison": false,
-        "showHeadless": false,
-        "trackHeadless": true,
-        "weekStartsMonday": true
-    },
     "appearance": {
         "animationMultiplier": 0.9,
         "appLaunchAnimation": {
@@ -1694,71 +1671,6 @@
             "upcomingHorizonDays": 14
         }
     },
-    "clockApp": {
-        "analogWorldClock": true,
-        "bedtime": {
-            "days": [
-                true,
-                true,
-                true,
-                true,
-                true,
-                true,
-                true
-            ],
-            "enable": false,
-            "nightEndsHour": 5,
-            "remindEveryMinutes": 15,
-            "time": "23:30",
-            "windDownMinutes": 30
-        },
-        "enable": true,
-        "phoneAlarm": {
-            "clockApps": [
-                "Clock",
-                "Rel\u00f3gio",
-                "Alarm",
-                "Alarme",
-                "com.google.android.deskclock",
-                "com.sec.android.app.clockpackage"
-            ],
-            "enable": true,
-            "ignorePackages": [
-                "com.samsung.android.app.routines"
-            ],
-            "pollMinutes": 10
-        },
-        "reminders": {
-            "alertBackgroundColor": "",
-            "alertBackgroundImage": "",
-            "alertSound": true,
-            "allDayTime": "09:00",
-            "autoDeleteCompletedDays": 0,
-            "autoSilenceMinutes": 1,
-            "catchUpMinutes": 10,
-            "categoriesExpanded": true,
-            "defaultAlert": "light",
-            "defaultCategory": "default",
-            "pinImportant": true,
-            "showCompleted": false,
-            "showInTimetable": true,
-            "showTemplates": true,
-            "snoozeMinutes": 5,
-            "sortBy": "alertTime",
-            "todoSync": {
-                "enable": false,
-                "intervalMinutes": 15
-            },
-            "trashDays": 30,
-            "view": "card",
-            "wakeFromSuspend": true
-        },
-        "showSecondsInApp": true,
-        "showTimetableEvents": true,
-        "startTab": "last",
-        "timetableLeadMinutes": 15,
-        "timetableLookaheadDays": 2
-    },
     "configVersion": 29,
     "conflictKiller": {
         "autoKillNotificationDaemons": false,
@@ -2364,10 +2276,7 @@
         }
     },
     "localsend": {
-        "autoStart": true,
-        "downloadPath": "$HOME/Downloads/localsend",
-        "preferPopupOverNotification": true,
-        "showNotifications": true
+        "downloadPath": "$HOME/Downloads/localsend"
     },
     "lock": {
         "blur": {
@@ -2488,324 +2397,6 @@
         "videoCodec": "any",
         "videoResolution": "best",
         "writeThumbnail": false
-    },
-    "modes": {
-        "enable": true,
-        "flash": "auto",
-        "game": {
-            "extraClasses": [],
-            "gpuThreshold": 45,
-            "holdSec": 20,
-            "useDesktopCategory": true,
-            "useGpuHeuristic": true,
-            "useLauncherClasses": true
-        },
-        "graceSec": 5,
-        "lastModeId": "sleep",
-        "lastRoutineId": "",
-        "lastTab": "modes",
-        "lockPill": true,
-        "modes": [
-            {
-                "actions": [
-                    {
-                        "type": "nightLight",
-                        "value": true
-                    },
-                    {
-                        "type": "keepAwake",
-                        "value": false
-                    },
-                    {
-                        "type": "screenShader",
-                        "value": ""
-                    },
-                    {
-                        "delaySec": 3600,
-                        "type": "dnd",
-                        "value": true
-                    }
-                ],
-                "auto": true,
-                "color": "",
-                "end": {
-                    "autoOffMin": 0,
-                    "notify": true,
-                    "revert": true,
-                    "strict": false
-                },
-                "icon": "bedtime",
-                "id": "sleep",
-                "match": "any",
-                "name": "Sleep",
-                "notify": true,
-                "preset": true,
-                "triggers": [
-                    {
-                        "days": [
-                            1,
-                            2,
-                            3,
-                            4,
-                            5,
-                            6,
-                            7
-                        ],
-                        "forSec": 0,
-                        "from": "sunset",
-                        "not": false,
-                        "to": "07:00",
-                        "type": "schedule"
-                    }
-                ]
-            },
-            {
-                "actions": [
-                    {
-                        "type": "dnd",
-                        "value": true
-                    },
-                    {
-                        "type": "keepAwake",
-                        "value": true
-                    },
-                    {
-                        "type": "powerProfile",
-                        "value": "balanced"
-                    }
-                ],
-                "auto": false,
-                "color": "",
-                "end": {
-                    "autoOffMin": 0,
-                    "notify": true,
-                    "revert": true,
-                    "strict": false
-                },
-                "icon": "work",
-                "id": "work",
-                "match": "any",
-                "name": "Work",
-                "notify": true,
-                "preset": true,
-                "triggers": [
-                    {
-                        "days": [
-                            1,
-                            2,
-                            3,
-                            4,
-                            5
-                        ],
-                        "forSec": 0,
-                        "from": "09:00",
-                        "not": false,
-                        "to": "18:00",
-                        "type": "schedule"
-                    }
-                ]
-            },
-            {
-                "actions": [
-                    {
-                        "type": "dnd",
-                        "value": true
-                    },
-                    {
-                        "type": "media",
-                        "value": "pause"
-                    }
-                ],
-                "auto": false,
-                "color": "",
-                "end": {
-                    "autoOffMin": 0,
-                    "notify": true,
-                    "revert": true,
-                    "strict": false
-                },
-                "icon": "center_focus_strong",
-                "id": "focus",
-                "match": "any",
-                "name": "Focus",
-                "notify": true,
-                "preset": true,
-                "triggers": []
-            },
-            {
-                "actions": [
-                    {
-                        "type": "gameMode",
-                        "value": true
-                    },
-                    {
-                        "type": "dnd",
-                        "value": true
-                    },
-                    {
-                        "type": "powerProfile",
-                        "value": "performance"
-                    },
-                    {
-                        "type": "keepAwake",
-                        "value": true
-                    },
-                    {
-                        "type": "nightLight",
-                        "value": false
-                    }
-                ],
-                "auto": false,
-                "color": "",
-                "end": {
-                    "autoOffMin": 0,
-                    "notify": true,
-                    "revert": true,
-                    "strict": false
-                },
-                "icon": "sports_esports",
-                "id": "gaming",
-                "match": "any",
-                "name": "Gaming",
-                "notify": true,
-                "preset": true,
-                "triggers": [
-                    {
-                        "forSec": 0,
-                        "not": false,
-                        "type": "game",
-                        "when": "running"
-                    }
-                ]
-            },
-            {
-                "actions": [
-                    {
-                        "type": "dnd",
-                        "value": true
-                    },
-                    {
-                        "type": "keepAwake",
-                        "value": true
-                    },
-                    {
-                        "type": "nightLight",
-                        "value": false
-                    }
-                ],
-                "auto": false,
-                "color": "",
-                "end": {
-                    "autoOffMin": 0,
-                    "notify": true,
-                    "revert": true,
-                    "strict": false
-                },
-                "icon": "theaters",
-                "id": "theater",
-                "match": "any",
-                "name": "Theater",
-                "notify": true,
-                "preset": true,
-                "triggers": [
-                    {
-                        "forSec": 0,
-                        "not": false,
-                        "type": "fullscreen"
-                    }
-                ]
-            },
-            {
-                "actions": [
-                    {
-                        "type": "dnd",
-                        "value": true
-                    },
-                    {
-                        "type": "keepAwake",
-                        "value": true
-                    },
-                    {
-                        "type": "nightLight",
-                        "value": false
-                    },
-                    {
-                        "type": "screenShader",
-                        "value": ""
-                    }
-                ],
-                "auto": false,
-                "color": "",
-                "end": {
-                    "autoOffMin": 0,
-                    "notify": true,
-                    "revert": true,
-                    "strict": false
-                },
-                "icon": "co_present",
-                "id": "presentation",
-                "match": "any",
-                "name": "Presentation",
-                "notify": true,
-                "preset": true,
-                "triggers": [
-                    {
-                        "count": 2,
-                        "forSec": 0,
-                        "names": [],
-                        "not": false,
-                        "type": "monitors"
-                    }
-                ]
-            },
-            {
-                "actions": [
-                    {
-                        "type": "nightLight",
-                        "value": true
-                    },
-                    {
-                        "type": "brightness",
-                        "value": 50
-                    }
-                ],
-                "auto": false,
-                "color": "",
-                "end": {
-                    "autoOffMin": 0,
-                    "notify": true,
-                    "revert": true,
-                    "strict": false
-                },
-                "icon": "spa",
-                "id": "relax",
-                "match": "any",
-                "name": "Relax",
-                "notify": true,
-                "preset": true,
-                "triggers": [
-                    {
-                        "days": [
-                            1,
-                            2,
-                            3,
-                            4,
-                            5,
-                            6,
-                            7
-                        ],
-                        "forSec": 0,
-                        "from": "20:00",
-                        "not": false,
-                        "to": "23:00",
-                        "type": "schedule"
-                    }
-                ]
-            }
-        ],
-        "overlayEnabled": true,
-        "presetsSeeded": true,
-        "routines": []
     },
     "musicRecognition": {
         "interval": 4,
@@ -3013,12 +2604,9 @@
     "panelFamily": "ii",
     "phone": {
         "contacts": {
-            "enabled": true,
-            "hideUnnamed": true,
             "showAvatars": true,
             "sortBy": "first"
         },
-        "kdeconnectEnabled": true,
         "microphone": {
             "autoGainControl": false,
             "connection": "wifi",
@@ -3029,8 +2617,6 @@
             "port": 4748,
             "setAsDefault": false
         },
-        "mirrorNotificationsToDesktop": true,
-        "remoteCommands": true,
         "scrcpy": {
             "alwaysOnTop": false,
             "appMode": {
@@ -3047,12 +2633,9 @@
                 "showAppIcons": true,
                 "systemDecorations": true
             },
-            "autoResume": true,
-            "autoWirelessIp": true,
             "bitRate": "8M",
             "clipboardSync": true,
             "embed": {
-                "enabled": true,
                 "keepWarmSeconds": 120
             },
             "fullscreen": false,
@@ -3061,20 +2644,16 @@
             "maxSize": 0,
             "noAudio": false,
             "noPowerOn": false,
-            "pinAdbPort": false,
             "recording": {
-                "folder": "",
                 "withAudio": true
             },
             "showTerminal": false,
             "showTouches": false,
             "stayAwake": false,
             "turnScreenOff": false,
-            "useWireless": false,
             "videoBuffer": 0,
             "wirelessPort": "5555"
         },
-        "showPeripheralCards": true,
         "webcam": {
             "bitrate": "4M",
             "cameraFacing": "front",
@@ -3171,19 +2750,6 @@
     },
     "screenSnip": {
         "savePath": ""
-    },
-    "screenTime": {
-        "alwaysAllowed": [],
-        "autoCloseSeconds": 0,
-        "enable": true,
-        "limits": [],
-        "notifyOnLimit": true,
-        "overdueReminderMinutes": 15,
-        "pinForEdits": false,
-        "pinHash": "",
-        "schedules": [],
-        "warnLastMinute": true,
-        "warnMinutes": 5
     },
     "search": {
         "appearance": {
@@ -3649,48 +3215,6 @@
         },
         "restoreOnUntile": true,
         "showOnDragStart": true
-    },
-    "time": {
-        "alarms": {
-            "autoSilenceMinutes": 5,
-            "catchUpMinutes": 10,
-            "showAlarmsSection": true,
-            "showAnalogClock": true,
-            "showUpcoming": true,
-            "showWorldClocks": true,
-            "snoozeMinutes": 9,
-            "upcomingMinutes": 60,
-            "useFullscreenPopup": true,
-            "wakeFromSuspend": true,
-            "wakeLeadSeconds": 90
-        },
-        "dateFormat": "dd/MM, ddd",
-        "dateWithYearFormat": "dd/MM/yyyy",
-        "firstDayOfWeek": 0,
-        "format": "hh:mm",
-        "longDateFormat": "dd/MM/yyyy",
-        "pomodoro": {
-            "breakTime": 300,
-            "cyclesBeforeLongBreak": 4,
-            "focus": 1500,
-            "longBreak": 900,
-            "notify": true
-        },
-        "secondPrecision": false,
-        "secondsFormat": "ss",
-        "shortDateFormat": "dd/MM",
-        "timer": {
-            "notify": true,
-            "presets": [
-                60,
-                300,
-                600,
-                900,
-                1800,
-                3600
-            ]
-        },
-        "worldClocks": []
     },
     "tray": {
         "filterPassive": false,
